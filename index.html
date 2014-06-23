@@ -49,30 +49,66 @@
 
             <p>Die Anwendung soll den Spielleiter im Pen &amp; Paper Spiel DSA dabei unterstützen, Händler und ihr Sortiment zu erstellen, zu verwalten und zu speichern. Zusätzlich soll sie Interaktionen mit den Händlern vereinfachen. In DSA übernimmt jeder Spieler die Rolle eines Charakters. Der Spielleiter stellt die komplette Welt dar, er beschreibt die Welt und spielt Nicht-Spieler-Charaktere (NPC) wie z.B. Händler. Die Verfügbarkeit und der Preis bestimmter Waren werden dabei üblicherweise nach komplizierten Regeln ausgewürfelt. Bisher können die Spielregeln ausgenutzt werden, da die Verfügbarkeit von Waren und Händlern vom Spielleiter nicht persistiert werden, in dem Städte wiederholt neu betreten werden und dadurch jedes Mal neu ausgewürfelte Händler vor Ort sind bis schließlich der gewünschte erscheint. Das selbe Prinzip gilt auch für die Verfügbarkeit von Waren und deren Preise. Außerdem sind die Berechnungen der Wahrscheinlichkeiten für die Verfügbarkeiten aufwendig und zeitraubend, weshalb sie in der Praxis selten exakt durchgeführt werden.</p>
 
-            <p>
-                Die erste Version ist ein Hello World zur Gebiets / und Grenzenverwaltung. Folgende ausführbaren JAVA Applications sind verfügbar:
+            <h2>Handbuch</h2>
+            Unser Tool gliedert sich in zwei Schritte:
+            <ul>
+                <li>Das Anlegen von Daten</li>
+                <li>Spielphase</li>
+            </ul>
+            <h3>Das Anlegen von Daten</h3>
+            <p>Alle Daten werden im Menüpunkt DATEN VERWALTEN angelegt. Dies gilt jedoch nicht für Orte bzw. Händler. Dies erfolgt direkt im Hauptfenster über ORT PLATZIEREN bzw. HÄNDLER / WIRTSHAUS PLATZIEREN im jeweiligen Ort.</p>
+            <p>Unter DATEI/Händler drucken können ALLE Händler ausgedruckt werden um während des Spieles übersichtlicher auf diese zuzugreifen. Es wird ein PDF erzeugt, welches beliebig weiterverarbeitet werden kann.
+                <br>Bestehende Spiel- und Weltdaten lassen sich über IMPORT / EXPORT samt der verwendeten Karten im-bzw. exportieren.
+                <br>Mit den KARTENOPTIONEN kann man die Farbe und Größe der Symbole bestimmen und so sicherstellen, dass die Bezeichnungen lesbar sind.
+                <br>
+                <h3>Spielphase</h3>
+                Zunächst sind unter SPIEL/SPIELER die am aktuellen Spiel beteiligten Spieler einzutragen.
+                <br>Das Umrechnen von Währungen wie auch das Berechnen von Preisen ist im Menü SPIEL aufzufinden.
+                <br>Der Menüpunkt Zeit vorwärts stellen füllt das Sortiment der Händler wieder auf bzw. sorgt dafür, dass Fahrende Händler weiterziehen.
+                <br>Jeder Ort weist eine Ortsansicht auf in der die Wirtshäuser bzw. Händler im Ort angezeigt werden.
+                <h3>Systemanforderungen</h3>
                 <ul>
                     <li>
-                        <a href="http://geoheil.github.io/TU-SEPM/releases/version1/DSA-H-1.0-SNAPSHOT.zip">Download Version 1 JAR</a>
-                    </li>
-                    <li>
-                        <a href="http://geoheil.github.io/TU-SEPM/releases/hello-world/DSA-H-HelloWorld-Final.zip">Download HelloWorld-Final JAR</a>
-                    </li>
-                </ul>
-            </p>
-
-            <p>
-                Systemanforderungen:
-                <ul>
-                    <li>
+                        Kartenmaterial:
+                        <br>Liefern wir aus lizensierungs Gründen leider NICHT mit aus.</li>
+                    <li>Computer:
+                        <br>(am besten Windows) mit JAVA 8. Bei JAVA 8 am besten die AKTUELLSTE Version ( Aktuell: Java 8.0.5)</li>
+                    <li>Java:
+                        <br>
                         <a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">Java Runtime Environment 8 installiert</a>
                     </li>
                 </ul>
-            </p>
+                <h3>Installation</h3>
+                <ul>
+                    <li>Aktuellste Version aus dem GIT auschecken und mit: mvm -install installieren</li>
+                    <li>ZIP herunterladen &amp; entpacken</li>
+                </ul>
+                <h3>FAQ</h3>
+                <ul>
+                    <li>Zeugs mit Erklärungsbedarf TODO Laurids Liste hier</li>
+                </ul>
+                <h2>Versionen</h2>
+                <p>
+                    Die erste Version ist ein Hello World zur Gebiets / und Grenzenverwaltung. Folgende ausführbaren JAVA Applications sind verfügbar:
+                    <ul>
+                        <li>
+                            <a href="http://geoheil.github.io/TU-SEPM/releases/version1/DSA-H-1.0-SNAPSHOT.zip">Download Version 1 JAR</a>
+                        </li>
+                        <li>
+                            <a href="http://geoheil.github.io/TU-SEPM/releases/hello-world/DSA-H-HelloWorld-Final.zip">Download HelloWorld-Final JAR</a>
+                        </li>
+                        <li>
+                            <a href="_blankTodo">Download Version 3 ZIP (letzte Version aus SEPM)</a>
+                        </li>
+                        <li>
+                            <a href="_blankTodo">TODO Download Version xxx ZIP (erste Community Version) TODO</a>
+                        </li>
+                    </ul>
+                </p>
 
-            <h3>Feedback bitte an diese Mailadresse senden</h3>
-            <p>dsa@bountin.net</p>
-            <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+                <h3>Feedback bitte an diese Mailadresse senden</h3>
+                <p>dsa@bountin.net</p>
+                <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
 </body>
 
